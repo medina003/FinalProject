@@ -38,3 +38,12 @@ function initMap() {
 }
 var link = document.getElementById("largerMapLink");
 link.href = "https://www.google.com/maps/place/Texas";
+
+let menuBtn = document.querySelector(".menu-btn");
+let menu = document.querySelector(".nav-list");
+let hideBlock = document.querySelector(".hide");
+menuBtn.addEventListener("click", function () {
+    menuBtn.classList.toggle("active");
+    menu.classList.toggle("active");
+    hideBlock.classList.toggle("active");
+});
