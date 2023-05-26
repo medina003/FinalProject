@@ -393,3 +393,60 @@ nav {
     bottom: -52px;
     left: -76px;
 }
+
+.clients {
+    margin-bottom: 92px;
+}
+
+.clients-title {
+    max-width: 560px;
+    margin: 0 auto;
+}
+
+.clients-title::after {
+    width: 118px;
+}
+
+.clients-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 194px 0 241px;
+    gap: 69px;
+}
+
+.clients-item {
+    background: #ffffff;
+    box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.08);
+    padding: 24px 35px 39px 29px;
+}
+
+.clients-text {
+    margin-top: 18px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 159.3%;
+    letter-spacing: 0.02em;
+    color: #331b3b;
+}
+
+.clients-name {
+    margin-top: 14px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 159.3%;
+    letter-spacing: 0.02em;
+    color: #000000;
+    margin-left: 18.5px;
+    position: relative;
+}
+
+.clients-name::before {
+    content: "";
+    position: absolute;
+    width: 11px;
+    height: 3px;
+    background: #FDC221;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -18.5px;
+}
