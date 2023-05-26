@@ -116,8 +116,7 @@ nav {
     color: rgba(51, 27, 59, 1);
 }
 
-.main-btn {
-    margin-top: 31px;
+.btn {
     padding: 22px 49px;
     background: #331b3b;
     border-radius: 10px;
@@ -129,6 +128,10 @@ nav {
     text-transform: uppercase;
     color: #ffffff;
     cursor: pointer;
+}
+
+.main-btn {
+    margin-top: 31px;
 }
 
 .do {
@@ -144,24 +147,22 @@ nav {
     position: relative;
 }
 
-.do-title {
+.title {
     font-weight: 300;
     font-size: 48px;
     line-height: 106.3%;
     text-align: center;
     letter-spacing: -0.01em;
     color: #331b3b;
-    max-width: 348px;
-    margin-left: 526px;
     position: relative;
     z-index: 0;
 }
 
-.do-title span {
+.title span {
     font-weight: 700;
 }
 
-.do-title::after {
+.title::after {
     content: "";
     position: absolute;
     width: 159px;
@@ -170,6 +171,11 @@ nav {
     right: 5px;
     background: #fdc221;
     z-index: -1;
+}
+
+.do-title {
+    max-width: 348px;
+    margin-left: 526px;
 }
 
 .owl-carousel {
@@ -221,13 +227,14 @@ nav {
     bottom: 0;
 }
 
-.owl-prev, .owl-next {
+.owl-prev,
+.owl-next {
     display: block;
     width: 35px;
     height: 34px;
     border: 2px solid #000000 !important;
     border-radius: 50% !important;
-    margin: 0 7.5px 0 0!important;
+    margin: 0 7.5px 0 0 !important;
     background: url("../img/arrow.svg") no-repeat center !important;
 }
 
@@ -237,7 +244,7 @@ nav {
 
 .owl-next {
     border: 2px solid #000000 !important;
-    margin: 0 0 0 7.5px !important;    
+    margin: 0 0 0 7.5px !important;
 }
 
 .owl-prev.disabled {
@@ -249,4 +256,43 @@ nav {
     right: -161px;
     bottom: -74px;
     z-index: -1;
+}
+
+.about {
+    margin-bottom: 110px;
+}
+
+.about-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 60px;
+    gap: 80px;
+}
+
+.about-right {
+    margin-top: 100px;
+}
+
+.about-title {
+    text-align: left;
+    max-width: 238px;
+}
+
+.about-text {
+    margin-top: 22px;
+    font-family: "Hind Vadodara";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 146.3%;
+    letter-spacing: 0.02em;
+    color: rgba(51, 27, 59, 1s);
+}
+
+.text-down {
+    margin-top: 9px;
+}
+
+.about-btn {
+    margin-top: 37px;
 }
