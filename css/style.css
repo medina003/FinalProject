@@ -336,7 +336,7 @@ nav {
     margin-left: 94px;
 }
 
-.work-descr {
+.work-subtitle {
     margin-top: 53px;
     font-weight: 400;
     font-size: 17px;
@@ -500,6 +500,7 @@ label {
 
 .send {
     margin-top: 15px;
+    display: flex;
 }
 
 ::placeholder {
@@ -581,6 +582,10 @@ label {
 .hide {
     width: 30px;
     height: 30px;
+    display: none;
+}
+
+.ul-social {
     display: none;
 }
 
@@ -750,8 +755,9 @@ label {
     .work-bg {
         margin-left: 100px;
     }
-    .work-descr {
+    .work-subtitle {
         max-width: 300px;
+        margin-top: 35px;
     }
     .about-title::after {
         width: 78px;
@@ -769,9 +775,235 @@ label {
         margin: 60px 30px 0;
     }
     .footer-wrap {
-        flex-wrap: wrap;  
+        flex-wrap: wrap;
+        gap: 20px;
     }
     .footer-left {
         max-width: 335px;
+    }
+    .send button {
+        padding: 14px 30px 13px;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-btn.active {
+        position: fixed;
+        right: 50px;
+        top: 30px;
+    }
+    .ul-social {
+        display: flex;
+    }
+    .nav-social {
+        display: none;
+    }
+    header {
+        padding: 30px 0 70px;
+    }
+    .do-title {
+        text-align: left;
+        margin-left: 16px;
+    }
+    .header-main {
+        flex-wrap: wrap;
+    }
+    .do-bg {
+        margin-right: 16px;
+    }
+    .about-wrap {
+        flex-wrap: wrap;
+    }
+    .about-right {
+        margin-top: 0;
+        max-width: none;
+    }
+    .work-text {
+        flex-wrap: wrap;
+    }
+    .work-bg {
+        margin-left: 43px;
+    }
+    .work-subtitle {
+        display: none;
+    }
+    #carusel2 {
+        margin-top: 124px;
+    }
+    .work-title::after {
+        bottom: 4px;
+    }
+    .clients-title {
+        font-size: 42px;
+    }
+    .clients-title:after {
+        right: 32px;
+    }
+    .clients-wrap {
+        flex-wrap: wrap;
+        gap: 37px;
+        margin: 37px 30px 0;
+    }
+    .footer_right {
+        margin-top: 0px;
+    }
+    .footer-left {
+        max-width: 383px;
+    }
+}
+
+@media (max-width: 576px) {
+    nav {
+        margin: 0 10px;
+    }
+    .header-main {
+        margin: 0 10px 0;
+    }
+    .main-title {
+        font-size: 46px;
+        line-height: 103.8%;
+        margin-top: 33px;
+    }
+    .btn {
+        font-size: 16px;
+    }
+    .main-btn {
+        margin-top: 23px;
+        padding: 15px 25px;
+    }
+    .main-subtitle {
+        margin-top: 20px;
+    }
+    header {
+        padding: 30px 0 35px;
+    }
+    .do-bg {
+        margin-right: 0;
+        border-radius: 0px 225px 0px 0px;
+        padding: 66px 0 61px 0;
+    }
+    .do-title {
+        font-size: 33px;
+        display: inline-block;
+    }
+    .do-title::after {
+        width: 117px;
+        right: 0px;
+        bottom: 1px;
+    }
+    .do-carusel {
+        margin: 56px 0 0 10px;
+    }
+    .do-item {
+        padding: 16px 10px;
+    }
+    .about {
+        margin-top: 20px;
+    }
+    .about-title {
+        font-size: 34px;
+        display: inline-block;
+    }
+    .about-title::after {
+        width: 60px;
+        right: 0px;
+    }
+    .about-btn {
+        margin-top: 23px;
+    }
+    .about {
+        margin-bottom: 46px;
+    }
+    .work {
+        padding-bottom: 48px;
+    }
+    .work-text {
+        width: 93%;
+    }
+    .work-title {
+        font-size: 32px;
+        margin-top: 48px;
+    }
+    .work-title::after {
+        bottom: 1px;
+        width: 152px;
+        right: 50px;
+    }
+    .work-bg {
+        margin-left: 0;
+        padding: 42px 0 65px;
+        border-radius: 200px 0px 0px 0px;
+    }
+    .owl-nav {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -49px;
+    }
+    #carusel2 {
+        margin-left: 19px;
+    }
+    .work-img img:last-child {
+        display: none;
+    }
+    .work-img img {
+        width: 250px !important;
+    }
+    .work-item {
+        padding: 23px 14px 26px;
+    }
+    .work-descr {
+        margin-top: 21px;
+    }
+    #carusel2 {
+        margin-left: 21px;
+    }
+    #carusel2 > .owl-nav {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -52px;
+    }
+    .work-name {
+        font-size: 16px;
+    }
+    .clients-title {
+        font-size: 31px;
+    }
+    .clients-title:after {
+        right: 114px;
+        width: 90px;
+    }
+    .clients-wrap {
+        gap: 20px;
+        margin: 37px 10px 0;
+    }
+    .clients-item {
+        padding: 16px 16px 20px;
+    }
+    .clients-text {
+        margin-top: 8px;
+    }
+    .clients {
+        margin-bottom: 54px;
+    }
+    .footer-wrap {
+        margin: 0 10px 0;
+    }
+    .send input {
+        padding: 13px 10px 14px;
+        max-width: 200px;
+    }
+    #map {
+        height: unset;
+        width: unset;
+        width: 300px;
+        height: 300px;
+    }
+    .footer_right {
+        margin: 0 auto;
+    }
+    footer {
+        padding-bottom: 40px;
+        background: #000000;
+        border-radius: 0px 105px 0px 0px;
     }
 }

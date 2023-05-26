@@ -26,6 +26,18 @@ $("#carusel2").owlCarousel({
     items: 3,
     navText: ["", ""],
     autoWidth: true,
+    responsive: {
+        0: {
+            items: 1,
+        },
+        576: {
+            items: 2,
+        },
+        768: {
+            margin: 20,
+            items: 3,
+        },
+    },
 });
 
 function initMap() {
