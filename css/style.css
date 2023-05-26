@@ -178,11 +178,11 @@ nav {
     margin-left: 526px;
 }
 
-.owl-carousel {
+.do-carusel {
     margin: 95px 0 0 265px;
 }
 
-.item {
+.do-item {
     background: #ffffff;
     box-shadow: 0px 0px 9px 2px rgba(0, 0, 0, 0.05);
     border-radius: 10px;
@@ -219,6 +219,7 @@ nav {
     line-height: 145.3%;
     letter-spacing: 0.02em;
     color: rgba(51, 27, 59, 0.66);
+    max-width: 275px;
 }
 
 .owl-nav {
@@ -286,7 +287,7 @@ nav {
     font-size: 17px;
     line-height: 146.3%;
     letter-spacing: 0.02em;
-    color: rgba(51, 27, 59, 1s);
+    color: rgba(51, 27, 59, 0.66);
 }
 
 .text-down {
@@ -295,4 +296,100 @@ nav {
 
 .about-btn {
     margin-top: 37px;
+}
+
+.work {
+    padding-bottom: 75px;
+    overflow: hidden;
+    position: relative;
+}
+
+.work-bg {
+    padding: 42px 0 84px;
+    background: rgba(255, 222, 212, 0.3);
+    border-radius: 400px 0px 0px 0px;
+    margin-left: 174px;
+}
+
+.work-text {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0px;
+    margin: 0 auto;
+    width: 80%;
+}
+.work-title {
+    text-align: left;
+    margin-top: 42px;
+}
+
+.work-title::after {
+    width: 150px;
+    right: 73px;
+}
+
+#carusel2 {
+    margin-top: 224px;
+    margin-left: 94px;
+}
+
+.work-descr {
+    margin-top: 53px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 146.3%;
+    letter-spacing: 0.02em;
+    color: #331b3b;
+    max-width: 515px;
+}
+
+.work-item {
+    padding: 24px 14px 35px;
+    background: #ffffff;
+    box-shadow: 0px 0px 9px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+
+.work-img {
+    display: flex;
+    gap: 17px;
+}
+
+.work-img img {
+    filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.25));
+}
+
+.work-descr {
+    margin-top: 33px;
+    margin-left: 16px;
+    margin-right: 9px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.work-name {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 146.3%;
+    color: #331b3b;
+}
+
+.work_btn {
+    cursor: pointer;
+    padding: 2px 12px 1px;
+    border: 1px solid #343434;
+    border-radius: 100px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 146.3%;
+    color: #331b3b;
+}
+
+#carusel2 > .owl-nav {
+    bottom: -52px;
+    left: -76px;
 }
