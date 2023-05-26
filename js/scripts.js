@@ -3,7 +3,7 @@ $("#carusel1").owlCarousel({
     nav: true,
     dots: false,
     items: 4,
-    navText: ['', ''],
+    navText: ["", ""],
     autoWidth: true,
     responsive: {
         0: {
@@ -19,12 +19,22 @@ $("#carusel1").owlCarousel({
     },
 });
 
-
 $("#carusel2").owlCarousel({
     margin: 40,
     nav: true,
     dots: false,
     items: 3,
-    navText: ['', ''],
+    navText: ["", ""],
     autoWidth: true,
 });
+
+function initMap() {
+    var mapOptions = {
+        center: { lat: 31.9686, lng: -99.9018 },
+        zoom: 6,
+        disableDefaultUI: true,
+    };
+    var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+}
+var link = document.getElementById("largerMapLink");
+link.href = "https://www.google.com/maps/place/Texas";
