@@ -9,6 +9,9 @@ $("#carusel1").owlCarousel({
         0: {
             items: 1,
         },
+        576: {
+            items: 3,
+        },
         1201: {
             items: 4,
         },
@@ -59,3 +62,5 @@ menuBtn.addEventListener("click", function () {
     menu.classList.toggle("active");
     hideBlock.classList.toggle("active");
 });
+
+new WOW().init();
